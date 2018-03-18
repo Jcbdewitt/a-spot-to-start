@@ -77,9 +77,6 @@ if state = "attack"
             target_x = x
             target_y = y
             state = "idle"
-            spr_index = spr_stand
-            spr_index_grey = spr_stand_grey
-            image_index = 0
             exit
         }
         

@@ -3,21 +3,18 @@
 if attack = -1 && distance_to_object(target) <= attack_range
 {
     attack = 0
-    image_index = 0
     alarm[1] = round(attack_rate * 2)
     exit
 }
 if attack = 0
 {
     attack = 1
-    image_index = 1
     alarm[1] = round(attack_rate * 2)
     exit
 }
 if attack = 1
 {
     attack = 2
-    image_index = round(attack_rate * 2)
     alarm[1] = 6
     exit
 }
@@ -26,7 +23,6 @@ if attack = 2
     if instance_exists(target)
     {
         attack = 3
-        image_index = 3
         alarm[1] = round(attack_rate * 4)
         // CALCULATE DAMAGE
         attack_damage = irandom_range(min_damage, max_damage)
@@ -60,9 +56,6 @@ if attack = 2
 if attack = 3
 {
     attack = 4
-    spr_index = spr_stand
-    spr_index_grey = spr_stand_grey
-    image_index = 0
     alarm[1] = round(attack_rate * 5)
     exit
 }

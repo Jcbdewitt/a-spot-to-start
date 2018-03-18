@@ -463,14 +463,6 @@
             }
         },
         {
-            "Key": "6de0fcae-43e6-43a6-a7dc-87a897934c7f",
-            "Value": {
-                "id": "f23eac04-78d6-46e0-8cd9-b4997d57bc3a",
-                "resourcePath": "objects\\obj_death\\obj_death.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "70726c82-d904-4570-9d10-e207239885f3",
             "Value": {
                 "id": "6e7e7c55-849f-4cbf-b24f-da2f8e20c01b",

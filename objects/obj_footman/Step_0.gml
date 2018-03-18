@@ -46,61 +46,6 @@ if mouse_check_button_pressed(mb_right)
     }
 }
 
-
-
-/// ATTACK STATE
-
-if state = "attack"
-{
-    if x = point_x && y = point_y && attack = -1
-    {
-        // IF THE TARGETTED UNIT HAS MOVED, CREATE A NEW TARGET AND PATH 
-        if instance_exists(target)
-        {
-            if point_distance(target.x, target.y, target_x, target_y) > 64
-            {
-                create_new_target = true
-                // CREATE TARGET AT THE TARGETTED UNIT
-                target_x = floor(target.x / GRID_SIZE) * GRID_SIZE + (GRID_SIZE / 2)
-                target_y = floor(target.y / GRID_SIZE) * GRID_SIZE + (GRID_SIZE / 2)
-                // CREATE TARGET CLOSEST TO THE TARGETTED UNIT
-                scr_set_attack_targets()
-            }  
-            scr_attack_next_point()
-        }
-        else if attack = -1
-        // NO TARGET?
-        {
-            target_x = x
-            target_y = y
-            state = "idle"
-            //image_speed = 0
-            spr_index = spr_stand
-            spr_index_grey = spr_stand_grey
-            image_index = 0
-            exit
-        }
-    }
-    
-    // IF NOT AT END OF PATH, THEN MOVE !!!
-    if path_pos < path_get_number(path)
-    {
-        mp_linear_step(point_x, point_y, spd, false)
-    }
-    else
-    // IF AT END OF PATH, ADD CELL TO THE GRID
-    {
-        mp_grid_add_cell(global.grid, floor(x /GRID_SIZE), floor(y / GRID_SIZE))
-        wait = 0
-        if target = -4
-        {
-            spr_index = spr_stand
-            spr_index_grey = spr_stand_grey
-            image_index = 0
-        }
-    }
-}
-
 /// MOVE STATE
 
 if state = "move"
@@ -122,8 +67,6 @@ if state = "move"
         wait = 0
         alarm[0] = -1
         state = "idle"
-        spr_index = spr_footman_stand
-        spr_index_grey = spr_footman_stand_grey
         image_speed = 0
     }
 }

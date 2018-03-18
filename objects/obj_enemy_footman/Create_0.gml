@@ -10,7 +10,7 @@ idle_y = ystart
 
 image_speed = 0
 
-
+image_index = 1
 
 selected = false
 
@@ -94,16 +94,7 @@ attack = -1
 ///SPRITES
 img_angle = 0
 
-spr_walk = spr_footman_walk
-spr_walk_grey = spr_footman_walk_grey
-spr_attack = spr_footman_attack
-spr_attack_grey = spr_footman_attack_grey
-spr_stand = spr_footman_stand
-spr_stand_grey = spr_footman_stand_grey
 
-// WHAT SPRITE TO USE FOR EACH STATE
-spr_index = spr_stand
-spr_index_grey = spr_stand_grey
 
 color = c_red
 

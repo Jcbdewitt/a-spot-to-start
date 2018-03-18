@@ -5,12 +5,6 @@ draw_rectangle_colour(x-30,y-45,x+(50/max_hp)*hp-30,y-40,c_lime,c_lime,c_lime,c_
 draw_rectangle_colour(x-30,y-45,x-30+50,y-40,c_black,c_black,c_black,c_black,true)
 
 /* */
-/// DRAW INSPIRED
-if inspired = true
-{
-    inspire_index += .1
-    draw_sprite_ext(spr_inner_fire, inspire_index, x ,y, 1, 1, 0, c_white, 1)
-}
 
 /* */
 ///DRAW PATH
@@ -45,16 +39,6 @@ if x = point_x && y = point_y
 ///DRAW PLAYER SPRITE
 
 draw_set_alpha(1) 
-// DRAW SHADOW
-if inspired = false
-{
-    draw_sprite_ext(spr_index_grey,image_index,x+4,y+4,1,1,img_angle,c_black,.5)
-    draw_sprite_ext(spr_index,image_index,x+4,y+4,1,1,img_angle,c_black,.5)
-}
-// DRAW GRAY SCALE
-draw_sprite_ext(spr_index_grey,image_index,x,y,1,1,img_angle,color,1)
-// DRAW SPRITE
-draw_sprite_ext(spr_index,image_index,x,y,1,1,img_angle,c_white,1)
 
 /* */
 ///DRAW STATE
@@ -75,3 +59,4 @@ draw_set_color(c_blue)
 
 /* */
 /*  */
+draw_self();

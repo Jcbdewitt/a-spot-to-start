@@ -9,6 +9,7 @@ idle_x = xstart
 idle_y = ystart
 
 image_speed = 0
+image_index = 1
 
 selected = false
 

@@ -1,14 +1,3 @@
-/// @description  CREATE OBJ_DEATH
-death = instance_create(x,y, obj_death)
-
-// THIS TELLS THE DEATH OBJECT WHAT SPRITES, COLORS, AND IMAGE ANGLE TO USE
-with death
-{
-    unit = "footman"
-    color = c_blue
-    img_angle = other.img_angle
-}
-
 // REMOVE ITSELF FROM THE GRID
 if x = point_x && y = point_y
     mp_grid_clear_cell(global.grid,floor(x / GRID_SIZE), floor(y / GRID_SIZE));

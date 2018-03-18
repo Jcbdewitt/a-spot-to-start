@@ -38,8 +38,7 @@ if instance_exists(target)
             attack = 0
             alarm[1] = 6//30
             target_x = x
-            target_y = y
-            image_speed = 0      
+            target_y = y    
         }
     }
     else if !mouse_check_button_pressed(mb_right) // note: the unit's aren't added to the grid yet, so make sure the RMB isn't pressed before checking the grid.
@@ -61,7 +60,6 @@ if instance_exists(target)
         else
         // IF THE NEXT CELL IS NOT FREE, WAIT
         {   
-            image_speed = 0
             inst = instance_position(path_get_point_x(path, path_pos + 1), path_get_point_y(path, path_pos + 1), obj_all_units_parent)
             // IS THE OTHER UNIT AT THE END OF ITS PATH? IF SO CREATE A NEW PATH RIGHT AWAY
             if instance_exists(inst)
@@ -119,6 +117,6 @@ if instance_exists(target)
                 }
             }  
         }
-        img_angle = point_direction(x,y,point_x,point_y)
+        image_angle = point_direction(x,y,point_x,point_y)
     }
 }
