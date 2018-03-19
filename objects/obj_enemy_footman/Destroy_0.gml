@@ -6,7 +6,7 @@ mp_grid_clear_cell(global.grid,floor(x / GRID_SIZE), floor(y / GRID_SIZE));
 else
 mp_grid_clear_cell(global.grid, path_get_point_x(path, path_pos ) div GRID_SIZE, path_get_point_y(path, path_pos ) div GRID_SIZE) 
 
-audio_play_sound(snd_death, 1, 0)
+audio_play_sound(snd_explosion, 1, 0)
 
 with death
 {

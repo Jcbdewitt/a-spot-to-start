@@ -88,16 +88,7 @@ attack = -1
 
 /// SPRITES 
 img_angle = 0
-spr_stand = spr_archer_stand
-spr_stand_grey = spr_archer_stand_grey
-spr_walk = spr_archer_walk
-spr_walk_grey = spr_archer_walk_grey
-spr_attack = spr_archer_attack
-spr_attack_grey = spr_archer_attack_grey
 
-// WHAT SPRITE TO USE FOR EACH STATE
-spr_index = spr_stand
-spr_index_grey = spr_stand_grey
 
 color = c_red
 
