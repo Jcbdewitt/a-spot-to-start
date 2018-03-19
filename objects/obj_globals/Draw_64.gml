@@ -1,0 +1,1 @@
+draw_text(2, 2, "Rocks: " + string(global.rocks))

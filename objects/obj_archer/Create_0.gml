@@ -2,11 +2,10 @@
 x = floor(x/GRID_SIZE) * GRID_SIZE + (GRID_SIZE/2)
 y = floor(y/GRID_SIZE) * GRID_SIZE + (GRID_SIZE/2)
 
-image_speed = 0
 
-/// variables
 
 selected = false
+image_speed = 0
 
 // TARGETTING
 target = -4
@@ -17,17 +16,21 @@ spd = 6
 state = "idle"
 
 // HIT POINTS
-max_hp = 420
+max_hp = 245
 hp = max_hp
 armor = 0
-damage_reduction = ((armor) * 0.06)/(1 + 0.06 * (armor)) 
-
-attacking = false
+damage_reduction = (armor * 0.06)/(1 + 0.06 * armor) 
 
 idle_x = 0
 idle_y = 0
 
 healing = false
+
+regeneration = 45
+alarm[5] = regeneration
+
+//image_speed = .3
+image_angle = 0
 
 /// INIT PATHFINDING
 path = path_add()
@@ -47,29 +50,19 @@ p_success = false
 closest_distance = 0
 closest_cell = "noone"
 
-attack_range = 32
-// the distance the unit will check to see if there's an units close enough to attack
-agro_range = 320
 
 
 /// ATTACKING
-
 attack = -1
-attack_damage = 0
-// minimum damage
-min_damage = 13
-// maximum damage
-max_damage = 18
 
-// is the attack button engaged?
 attack_button = false
 
-sprite_index = worker;
-image_speed = 0;
+attack_range = 320
+agro_range = 320
 
-// the team color of the unit
+min_damage = 15
+max_damage  = 20
+attack_damage = 0
+
 color = c_blue
 
-mining_timer_reset = 60
-mining_timer = mining_timer_reset
-last_rock = 0

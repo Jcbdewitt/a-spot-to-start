@@ -2951,7 +2951,9 @@
         "2b76c5d2-caa9-4fad-a4e1-2681c600ac0b",
         "47747105-af13-4bb8-b633-3b9e2df1845e",
         "d1b6effd-80bd-42b9-ad57-54bf91b0cda3",
-        "9d4ac86d-f61c-44cf-be5e-2775a8c0718c"
+        "9d4ac86d-f61c-44cf-be5e-2775a8c0718c",
+        "e2d2aee7-64c7-47df-a747-57a09aa1d07c",
+        "682fd69c-49a3-4c26-9228-2cdb4fcea660"
     ],
     "IsDnD": false,
     "layers": [
@@ -3031,6 +3033,33 @@
             "modelName": "GMRInstanceLayer",
             "mvc": "1.0",
             "userdefined_depth": true,
+            "visible": true
+        },
+        {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "Buttons",
+            "id": "25219bee-5a90-4c62-884f-ebfc7bbaade2",
+            "depth": -101,
+            "grid_x": 64,
+            "grid_y": 64,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "instances": [
+{"name": "inst_54C99106","id": "e2d2aee7-64c7-47df-a747-57a09aa1d07c","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_54C99106","objId": "d9f0de5e-5a8a-4517-a850-3315696c0d56","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": -64,"y": -16},
+{"name": "inst_36F48659","id": "682fd69c-49a3-4c26-9228-2cdb4fcea660","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_36F48659","objId": "64fd092c-6fcc-49b1-aa1b-2ed88779801d","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 672,"y": 2400}
+            ],
+            "layers": [
+
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "userdefined_depth": false,
             "visible": true
         },
         {

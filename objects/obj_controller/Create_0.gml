@@ -2,6 +2,8 @@
 global.grid = mp_grid_create(0,0,room_width/GRID_SIZE,room_height/GRID_SIZE,GRID_SIZE,GRID_SIZE)
 
 mp_grid_add_instances(global.grid, obj_wall,0)
+mp_grid_add_instances(global.grid, obj_facility, 0)
+mp_grid_add_instances(global.grid, obj_rock, 0)
 
 show_grid = false
 
