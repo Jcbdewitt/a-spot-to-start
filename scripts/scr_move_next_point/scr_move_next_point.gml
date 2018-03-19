@@ -33,7 +33,7 @@ if path_pos < path_get_number(path) && alarm[0] = -1 && !mouse_check_button_pres
     {   
         
 
-        //img_angle = point_direction(x,y,point_x,point_y)
+        //image_angle = point_direction(x,y,point_x,point_y)
         inst = instance_position(path_get_point_x(path, path_pos + 1), path_get_point_y(path, path_pos + 1), obj_all_units_parent)
         // IS THE OTHER UNIT AT THE END OF ITS PATH? IF SO CREATE A NEW PATH RIGHT AWAY
         if instance_exists(inst)

@@ -12,8 +12,8 @@ if position_meeting(mouse_x,mouse_y,self) && mouse_check_button_released(mb_left
     // if the double click alarm is greater than 0
     if alarm[3] > 0  //
     {
-        // loop through all of the footman within the view to see if it can be selected
-        with obj_footman
+        // loop through all of the workers within the view to see if it can be selected
+        with obj_worker
         {
             // IS THE UNIT WITHIN THE VIEW AND ARE THERE LESS THAN 9 UNITS ALREADY SELECTED? IF IT IS THEN SELECT IT AND ADD IT TO GROUP NONE
             if x > __view_get( e__VW.XView, 0 ) && x < __view_get( e__VW.XView, 0 ) + __view_get( e__VW.WView, 0 ) 

@@ -11,7 +11,7 @@ if mouse_check_button_pressed(mb_right)
         // ATTACK MOVE OR MOVE?
         if global.attack_button = true
         {
-            target = instance_position(mouse_x, mouse_y, obj_all_units_parent)// obj_enemy_parent)
+            target = instance_position(mouse_x, mouse_y, obj_facility)// obj_enemy_parent)
             
             if target != id
             {
@@ -25,7 +25,7 @@ if mouse_check_button_pressed(mb_right)
         }
         else // NO ATTACK BUTTON
         {
-            target = instance_position(mouse_x, mouse_y, obj_enemy_parent)
+            target = instance_position(mouse_x, mouse_y, obj_facility)
             if instance_exists(target)
             {
                 // CREATE TARGET CLOSEST TO THE TARGETTED UNIT
@@ -110,11 +110,11 @@ if state = "idle"
     // RANDOMLY ROTATE THE UNIT
     if alarm[2] = -1
         alarm[2] = irandom_range(90, 420)
-        
-    target = instance_nearest(x,y, obj_enemy_parent)
+        show_debug_message("idle")
+    target = instance_nearest(x,y, obj_facility)
     if distance_to_object(target) < agro_range
     {
-        state = "idle attack"
+        state = "MINE"
         idle_x = x
         idle_y = y
     }
@@ -126,7 +126,7 @@ if state = "idle"
 
 /// IDLE ATTACK STATE
 
-if state = "idle attack"
+if state = "MINE"
 {
     if x = point_x && y = point_y
     {
@@ -134,7 +134,7 @@ if state = "idle attack"
         {
             
             // TARGET THE CLOSEST ENEMY UNIT
-            var unit = instance_nearest(x,y, obj_enemy_parent)
+            var unit = instance_nearest(x,y, obj_facility)
             if unit != target
             {
                 target = unit
@@ -179,8 +179,6 @@ if state = "idle attack"
             {
                 state = "idle"
                 target = -4
-                spr_index = spr_stand
-                spr_index_grey = spr_stand_grey
                 exit
             }
                 

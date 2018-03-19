@@ -1,9 +1,0 @@
-Converting GML script: ${project_dir}\objects\obj_death\Create_0.gml
-Converted string - line 2: '' -> ""
-
-Converting GML script: ${project_dir}\objects\obj_death\Draw_0.gml
-Converted description /// @description DRAW PLAYER SPRITE
-Converted string - line 4: 'archer' -> "archer"
-Converted string - line 12: 'footman' -> "footman"
-Converted string - line 20: 'priest' -> "priest"
-Converted string - line 28: 'knight' -> "knight"

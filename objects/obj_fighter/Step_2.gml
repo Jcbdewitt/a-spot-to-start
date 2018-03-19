@@ -11,7 +11,7 @@ if position_meeting(mouse_x,mouse_y,self) && mouse_check_button_released(mb_left
 {
     if alarm[3] > 0
     {
-        with obj_archer
+        with obj_fighter
         {
             // IS THE UNIT WITHIN THE VIEW? IF IT IS THEN SELECT IT AND ADD IT TO GROUP NONE
             if x > __view_get( e__VW.XView, 0 ) && x < __view_get( e__VW.XView, 0 ) + __view_get( e__VW.WView, 0 ) 

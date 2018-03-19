@@ -77,9 +77,6 @@ if state = "attack"
             target_x = x
             target_y = y
             state = "idle"
-            spr_index = spr_stand
-            spr_index_grey = spr_stand_grey
-            image_index = 0
             exit
         }
         
@@ -95,12 +92,6 @@ if state = "attack"
     {
         mp_grid_add_cell(global.grid, floor(x /GRID_SIZE), floor(y / GRID_SIZE))
         wait = 0
-        if target = -4
-        {
-            spr_index = spr_archer_stand
-            spr_index_grey = spr_archer_stand_grey
-            image_index = 0
-        }
     }
 }
 
@@ -125,8 +116,6 @@ if state = "move"
         wait = 0
         alarm[0] = -1
         state = "idle"
-        spr_index = spr_archer_stand
-        spr_index_grey = spr_archer_stand_grey
     }
 }
 

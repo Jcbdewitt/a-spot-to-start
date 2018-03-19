@@ -63,6 +63,3 @@ agro_range = 320
 min_damage = 15
 max_damage  = 20
 attack_damage = 0
-
-color = c_blue
-

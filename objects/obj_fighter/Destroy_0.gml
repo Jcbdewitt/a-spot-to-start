@@ -6,14 +6,6 @@ mp_grid_clear_cell(global.grid,floor(x / GRID_SIZE), floor(y / GRID_SIZE));
 else
 mp_grid_clear_cell(global.grid, path_get_point_x(path, path_pos ) div GRID_SIZE, path_get_point_y(path, path_pos ) div GRID_SIZE) 
 
-with death
-{
-    unit = "archer"
-    color = c_blue
-    img_angle = other.img_angle
-}
-
-
 
 
 /// DELETE ITSELF FROM AND CONTROL GROUP IT WAS IN

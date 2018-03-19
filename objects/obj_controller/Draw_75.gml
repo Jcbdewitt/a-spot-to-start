@@ -1,6 +1,6 @@
 /// @description  Debugging info
 draw_set_color(c_red)
-draw_set_font(fnt_julian)
+
 
 // Frames Per Second
 draw_text(32,128,string_hash_to_newline("FPS:" + string(frames)))

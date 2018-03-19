@@ -29,7 +29,7 @@ if instance_exists(target)
         target_x = x
         target_y = y
         path_clear_points(path)
-        img_angle = point_direction(x,y,target.x,target.y)
+        image_angle = point_direction(x,y,target.x,target.y)
         
         // ATTACK!!!
         if attack = -1
