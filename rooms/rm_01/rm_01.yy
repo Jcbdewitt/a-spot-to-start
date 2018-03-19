@@ -2950,10 +2950,37 @@
         "c7a8657a-510a-413a-877a-f14a754c2f87",
         "2b76c5d2-caa9-4fad-a4e1-2681c600ac0b",
         "47747105-af13-4bb8-b633-3b9e2df1845e",
-        "d1b6effd-80bd-42b9-ad57-54bf91b0cda3"
+        "d1b6effd-80bd-42b9-ad57-54bf91b0cda3",
+        "9d4ac86d-f61c-44cf-be5e-2775a8c0718c"
     ],
     "IsDnD": false,
     "layers": [
+        {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "Instances_1",
+            "id": "450f3ac4-8f32-40ec-8890-27bd5550c7e8",
+            "depth": -10101,
+            "grid_x": 32,
+            "grid_y": 32,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "instances": [
+{"name": "inst_22B17BE5","id": "9d4ac86d-f61c-44cf-be5e-2775a8c0718c","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_22B17BE5","objId": "066ea692-1cbe-4b03-96a6-c24b1119deeb","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 736,"y": 2048}
+            ],
+            "layers": [
+
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "userdefined_depth": false,
+            "visible": true
+        },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Compatibility_Instances_Depth_-10001",
@@ -3008,7 +3035,7 @@
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Compatibility_Instances_Depth_-100",
+            "name": "Trees",
             "id": "51290cfc-d535-42f8-bbf9-cadbb636c035",
             "depth": -100,
             "grid_x": 16,
@@ -4620,7 +4647,7 @@
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Compatibility_Instances_Depth_-3",
+            "name": "Player_Fighters",
             "id": "6a491e8e-b1ee-46c9-bb2c-0830a6ee9ec5",
             "depth": -3,
             "grid_x": 16,
@@ -4650,7 +4677,7 @@
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Compatibility_Instances_Depth_-2",
+            "name": "Player_Miners",
             "id": "5404186b-3902-41b5-af2c-8738029ce022",
             "depth": -2,
             "grid_x": 16,
@@ -4683,7 +4710,7 @@
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Compatibility_Instances_Depth_-1",
+            "name": "Enemies",
             "id": "b63e7d5e-bd47-4e1c-a22e-9f14194aad10",
             "depth": -1,
             "grid_x": 16,
@@ -4788,7 +4815,7 @@
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Compatibility_Instances_Depth_2",
+            "name": "Water",
             "id": "cb8b1109-9145-4a65-a287-47752a833b47",
             "depth": 2,
             "grid_x": 16,
@@ -5385,7 +5412,7 @@
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Compatibility_Instances_Depth_100",
+            "name": "Dirt",
             "id": "8e0338fc-6d38-4d6e-b6c9-76fe3c48f5ad",
             "depth": 100,
             "grid_x": 16,
@@ -6125,7 +6152,7 @@
         },
         {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Compatibility_Background_0_bck_grass",
+            "name": "Grass",
             "id": "4cf18c80-7ff3-4475-87f7-dbffb688f41b",
             "animationFPS": 15,
             "animationSpeedType": "0",
